@@ -1,13 +1,13 @@
 import json
-from flask import Flask, request, Response
+from flask import Flask, request, Response, render_template
 
 from app import bablr
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
 
 @app.route('/')
 def home():
-    return 'hi'
+    return render_template('index.html')
 
 @app.route('/blab')
 def blab():
