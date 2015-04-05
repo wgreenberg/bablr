@@ -17,7 +17,7 @@ def hash2string(input_hash):
     return result
 
 # 32 chars => mapped by 5 bits
-charset = 'abcdefghijklmnopqrstuvwxyz,.     '
+charset = 'abcdefghijklmnopqrstuvwxyz,.@#  '
 def int2char(x):
     return charset[x]
 
