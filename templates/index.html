@@ -1,19 +1,31 @@
 <html>
 <head>
     <link href='http://fonts.googleapis.com/css?family=Anaheim|Marcellus|Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Bootcards CSS for desktop: -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootcards/1.0.0/css/bootcards-desktop.min.css">
+
+    <!-- Bootstrap and Bootcards JS -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootcards/1.0.0/js/bootcards.min.js"></script>
     <link href='static/styles/index.css' rel='stylesheet' type='text/css'>
     <script src='static/js/blab.js'></script>
     <title>Bablr</title>
 </head>
 <body>
-    <div>
+    <div class='h1 text-center'>
         <h1 class='title'>Bablr</h1>
     </div>
-    <div>
-        <h3 id='phrase'>Some fancy phrase.</h3>
-        <form id='userInput'>
-        <input id='userText' type='text'><button type='submit'>Submit</button>
-        </form>
+    <div class='main'>
+    <div class='panel'>
+        <div class='panel-body'>
+            <h3 class='phrase' id='phrase'>Commune with bablr</h3>
+        </div>
+        <div class='panel-footer'>
+            <form id='userInput'>
+            <input class='form-control' placeholder='sup homie' id='userText' type='text'>
+            </form>
+        </div>
+    </div>
     </div>
 
     <script>
